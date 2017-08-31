@@ -97,7 +97,7 @@ a:hover, a:active{
 #services > div > div > div > div > div > div > p > a,
 #contact > div > div > div > ul > li > a,
 #contact > div > div > div > p > a,
-#recomendations > div > div > div > h2{
+.bg-primary > div > div > div > h2{
 	color: lemonchiffon;
 }
 
