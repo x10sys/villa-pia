@@ -2,18 +2,17 @@
   "short_name": "Villa Pia",
   "name": "Villa Pia Guest Tour Guide",
   "background_color": "#3a3d4c",
-  "theme_color": "#cc0228",
+  "theme_color": "#3a3d4c",
   "display": "standalone",
   "icons": [
-    {
-      "src": "img/img-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    },
     {
       "src": "img/icon.png",
       "type": "image/png",
       "sizes": "192x192"
+    },{
+      "src": "img/img-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "./"
