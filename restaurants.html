@@ -57,6 +57,19 @@
 	   <!-- Add To Homescreen -->
 	   <link rel="stylesheet" type="text/css" href="css/addtohomescreen.css">
 	   <script src="js/addtohomescreen.js"></script>
+	   
+	   <!-- LazyLoad -->
+	   <style>
+	     div.lazy {
+		   background-position-x: center;
+		   background-position-y: center;
+		   background-size: cover;
+		   background-repeat-x: no-repeat;
+		   background-repeat-y: no-repeat;
+		   background-attachment: scroll;
+		   height: 400px;
+		 }
+	   </style>
     </head>
     <!-- End Head -->
 
@@ -118,36 +131,19 @@
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="./#reviews">Reviews</a></li>
                         </ul>
                         <!-- End Menu List -->
-
-                        <!-- Menu List -->                                
-                        <!-- <ul class="list-unstyled s-header__nav-menu">
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="about.html">About</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="team.html">Team</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="services.html">Services</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="events.html">Events</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="faq.html">FAQ</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contacts.html">Contacts</a></li>
-                        </ul> -->
-                        <!-- End Menu List -->
                     </div>
                 </nav>
                 <!-- End Nav -->
                 
                 <!-- Action -->
                 <ul class="list-inline s-header__action s-header__action--lb">
-                    <!-- <li class="s-header__action-item"><a class="s-header__action-link -is-active" href="#">En</a></li> -->
-                    <!-- <li class="s-header__action-item"><a class="s-header__action-link" href="#">Fr</a></li> -->
                 </ul>
                 <!-- End Action -->
 
                 <!-- Action -->
                 <ul class="list-inline s-header__action s-header__action--rb">
                     <li class="s-header__action-item">
-                        <!-- <a class="s-header__action-link" href="#"> -->
-                            <!-- <i class="g-padding-r-5--xs ti-facebook"></i> -->
-                            <!-- <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span> -->
                             <span class="g-display-none--xs s-header__action-link g-display-inline-block--sm">SolutionBox</span>
-                        <!-- </a> -->
                     </li>
                     <li class="s-header__action-item">
                         <a class="s-header__action-link" href="https://www.facebook.com/SolutionBoxRijeka/" target="_blank" rel="noopener">
@@ -254,7 +250,7 @@
         <!-- End Restaurant -->
 
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/archies.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/archies.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -277,12 +273,12 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/archies-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/archies-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/archies-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/archies-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/archies-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/archies-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/archies-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/archies-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/archies-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/archies-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/archies-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/archies-6.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -337,7 +333,7 @@
         <!-- End Restaurant -->
 
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/ruzmarin.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/ruzmarin.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -360,12 +356,12 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/ruzmarin-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ruzmarin-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ruzmarin-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ruzmarin-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ruzmarin-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ruzmarin-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ruzmarin-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ruzmarin-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ruzmarin-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ruzmarin-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ruzmarin-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ruzmarin-6.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -420,7 +416,7 @@
         <!-- End Restaurant -->
 	   
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/roko.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/roko.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -443,13 +439,13 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/roko-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/roko-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/roko-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/roko-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/roko-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/roko-6.jpg" alt="" /></div>
-						<div><img src="img/restaurants/roko-7.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/roko-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/roko-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/roko-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/roko-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/roko-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/roko-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/roko-7.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -504,7 +500,7 @@
         <!-- End Restaurant -->
 
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/yacht.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/yacht.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -527,13 +523,13 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/yacht-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/yacht-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/yacht-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/yacht-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/yacht-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/yacht-6.jpg" alt="" /></div>
-						<div><img src="img/restaurants/yacht-7.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/yacht-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/yacht-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/yacht-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/yacht-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/yacht-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/yacht-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/yacht-7.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -588,7 +584,7 @@
         <!-- End Restaurant -->
 	   
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/istranka.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/istranka.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -611,12 +607,12 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/istranka-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/istranka-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/istranka-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/istranka-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/istranka-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/istranka-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/istranka-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/istranka-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/istranka-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/istranka-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/istranka-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/istranka-6.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -671,7 +667,7 @@
         <!-- End Restaurant -->
 	   
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/knezgrad.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/knezgrad.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -694,12 +690,12 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/knezgrad-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/knezgrad-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/knezgrad-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/knezgrad-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/knezgrad-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/knezgrad-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/knezgrad-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/knezgrad-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/knezgrad-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/knezgrad-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/knezgrad-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/knezgrad-6.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -754,7 +750,7 @@
         <!-- End Restaurant -->
 
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/ucka.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/ucka.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -777,14 +773,14 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/ucka-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ucka-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ucka-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ucka-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ucka-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ucka-6.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ucka-7.jpg" alt="" /></div>
-						<div><img src="img/restaurants/ucka-8.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ucka-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ucka-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ucka-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ucka-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ucka-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ucka-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ucka-7.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/ucka-8.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -839,7 +835,7 @@
         <!-- End Restaurant -->
 
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/draga_di_lovrana.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/draga_di_lovrana.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -862,12 +858,12 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/draga_di_lovrana-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/draga_di_lovrana-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/draga_di_lovrana-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/draga_di_lovrana-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/draga_di_lovrana-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/draga_di_lovrana-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/draga_di_lovrana-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/draga_di_lovrana-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/draga_di_lovrana-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/draga_di_lovrana-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/draga_di_lovrana-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/draga_di_lovrana-6.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -923,7 +919,7 @@
 
 
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/johnson.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/johnson.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -946,14 +942,14 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/johnson-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/johnson-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/johnson-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/johnson-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/johnson-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/johnson-6.jpg" alt="" /></div>
-						<div><img src="img/restaurants/johnson-7.jpg" alt="" /></div>
-						<div><img src="img/restaurants/johnson-8.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/johnson-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/johnson-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/johnson-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/johnson-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/johnson-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/johnson-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/johnson-7.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/johnson-8.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -1008,7 +1004,7 @@
         <!-- End Restaurant -->
 	   
        <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/stancija_kovacici.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/stancija_kovacici.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -1031,14 +1027,14 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/stancija_kovacici-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/stancija_kovacici-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/stancija_kovacici-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/stancija_kovacici-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/stancija_kovacici-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/stancija_kovacici-6.jpg" alt="" /></div>
-						<div><img src="img/restaurants/stancija_kovacici-7.jpg" alt="" /></div>
-						<div><img src="img/restaurants/stancija_kovacici-8.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/stancija_kovacici-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/stancija_kovacici-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/stancija_kovacici-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/stancija_kovacici-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/stancija_kovacici-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/stancija_kovacici-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/stancija_kovacici-7.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/stancija_kovacici-8.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -1093,7 +1089,7 @@
         <!-- End Restaurant -->
 
         <!-- Restaurant -->
-	   <div class="js__parallax-window" style="background: url(./img/restaurants/mala_riba.jpg) no-repeat center center scroll;background-size: cover; height: 400px;">
+	   <div class="js__parallax-window lazy" data-src="./img/restaurants/mala_riba.jpg">
             <div class="container g-text-center--xs g-padding-y-100--xs g-padding-y-125--sm">
                 <div class="g-margin-b-80--xs">
 				
@@ -1116,13 +1112,13 @@
                     <!-- Slick Carousel -->
 				<div class="wow fadeInUp animated animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 					<div class="slider responsive">
-						<div><img src="img/restaurants/mala_riba-1.jpg" alt="" /></div>
-						<div><img src="img/restaurants/mala_riba-2.jpg" alt="" /></div>
-						<div><img src="img/restaurants/mala_riba-3.jpg" alt="" /></div>
-						<div><img src="img/restaurants/mala_riba-4.jpg" alt="" /></div>
-						<div><img src="img/restaurants/mala_riba-5.jpg" alt="" /></div>
-						<div><img src="img/restaurants/mala_riba-6.jpg" alt="" /></div>
-						<div><img src="img/restaurants/mala_riba-7.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/mala_riba-1.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/mala_riba-2.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/mala_riba-3.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/mala_riba-4.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/mala_riba-5.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/mala_riba-6.jpg" alt="" /></div>
+						<div><img class="lazy" src="img/placeholder-733x550.png" data-src="img/restaurants/mala_riba-7.jpg" alt="" /></div>
 					</div>
 				</div>
 				 <!-- control arrows -->
@@ -1252,6 +1248,7 @@
         <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="vendor/jquery.smooth-scroll.min.js"></script>
         <script type="text/javascript" src="vendor/jquery.back-to-top.min.js"></script>
+        <script type="text/javascript" src="vendor/jquery.lazy.min.js"></script>
         <script type="text/javascript" src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
         <script type="text/javascript" src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
         <script type="text/javascript" src="vendor/swiper/swiper.jquery.min.js"></script>
@@ -1304,7 +1301,16 @@
         	  ]
         	});
         </script>
-	
+	   
+	   <!-- LazyLoad -->
+	   <script>
+            $(function() {
+                $('.lazy').lazy({
+                    delay: 200
+                });
+            });
+        </script>
+	   
 	   <!-- ServiceWorker -->
         <script>
         if (navigator.serviceWorker) {

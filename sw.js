@@ -27,7 +27,7 @@
 // cache, then increment the CACHE_VERSION value. It will kick off the service worker update
 // flow and the old cache(s) will be purged as part of the activate event handler when the
 // updated service worker is activated.
-var CACHE_VERSION = 7;
+var CACHE_VERSION = 8;
 var CURRENT_CACHES = {
   prefetch: 'prefetch-pia-v' + CACHE_VERSION
 };
@@ -71,6 +71,7 @@ var CURRENT_CACHES = {
 'fonts/montserrat-regular-webfont.ttf',
 'fonts/montserrat-regular-webfont.woff',
 'fonts/montserrat-regular-webfont.woff2',
+'img/placeholder-733x550.png',
 'img/airbnb.png',
 'img/beaches/angiolina.jpg',
 'img/beaches/angiolina-1.jpg',
@@ -287,6 +288,7 @@ var CURRENT_CACHES = {
 'vendor/cubeportfolio/js/jquery.cubeportfolio.min.js',
 'vendor/jquery.appear.min.js',
 'vendor/jquery.back-to-top.min.js',
+'vendor/jquery.lazy.min.js',
 'vendor/jquery.equal-height.min.js',
 'vendor/jquery.masonry.pkgd.min.js',
 'vendor/jquery.migrate.min.js',
