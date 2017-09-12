@@ -1,45 +1,8 @@
 /*----------------------------------
   Fonts
 ------------------------------------*/
-body {
-  font-size: 0.9375rem;
-  font-family: Lato, sans-serif;
-  color: #222324;
-  line-height: 1.6;
-  background-color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  font-family: Montserrat, sans-serif;
-  line-height: 1.2;
-  color: #242424;
-  margin-top: 0;
-  margin-bottom: .5rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: capitalize;
-  margin-bottom: 0.75rem;
-}
-
 .s-promo-block-v6:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(-180deg, rgba(28, 123, 172, 0.1) 0%, #c54041 80%);
-    background-repeat: repeat-x;
-    content: " ";
+    background-image: linear-gradient(-180deg, rgba(28, 123, 172, 0.1) 0%, #cc0228 80%);
 }
 
 .s-portfolio__paginations-v1 .cbp-nav-pagination-active {
@@ -47,7 +10,7 @@ h6 {
 }
 
 .g-bg-color--dark  a, .g-bg-color--dark  .g-color--primary {
-	color:lemonchiffon !important;
+	color: lemonchiffon !important;
 }
 .g-bg-color--dark  a:hover {
 	color: #cc0228  !important;
@@ -156,8 +119,8 @@ a:focus, a:hover {
 }
 
 .s-btn--primary-bg:focus, .s-btn--primary-bg:hover {
-  color: #fff;
-  background: #cc0228;
+  color: #cc0228;
+  background: #FFF;
   border-color: #cc0228;
 }
 
